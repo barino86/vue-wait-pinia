@@ -1,0 +1,35 @@
+{
+  "name": "vue-wait-pinia",
+  "version": "0.0.1",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/vue-wait-pinia.umd.cjs",
+  "module": "./dist/vue-wait-pinia.js",
+  "exports": {
+    ".": {
+      "import": "./dist/vue-wait-pinia.js",
+      "require": "./dist/vue-wait-pinia.umd.cjs"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "dev-transition": "vite examples/transition-example -c vite.config.js",
+    "dev-pinia": "vite examples/pinia-example -c vite.config.js",
+    "dev-vue": "vite examples/vue-example -c vite.config.js",
+    "dev-wrap": "vite examples/wrap-example -c vite.config.js"
+  },
+  "peerDependencies": {
+    "vue": "^3.5.12"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.1.4",
+    "epic-spinners": "^2.0.0",
+    "escape-string-regexp": "^5.0.0",
+    "pinia": "^2.2.5",
+    "vite": "^5.4.9"
+  }
+}
